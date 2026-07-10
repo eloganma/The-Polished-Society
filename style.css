@@ -88,7 +88,7 @@ main {
 
 .hero {
     min-height: 420px;
-    background-image: linear-gradient(rgba(5, 145, 145, 0.25), rgba(5, 145, 145, 0.45)), url("salon-suite.jpg");
+    background-image: linear-gradient(rgba(5, 145, 145, 0.25), rgba(5, 145, 145, 0.45)), url("hero-salon.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -295,5 +295,187 @@ footer {
     .stats,
     .two-column {
         flex-direction: column;
+    }
+}
+
+
+/* Final project additions */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+footer a {
+    color: var(--primary);
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--accent);
+}
+
+.media-section,
+.image-callout,
+.contact-layout {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.media-section > div,
+.image-callout > div,
+.contact-layout > * {
+    flex: 1;
+}
+
+video {
+    width: 100%;
+    max-width: 520px;
+    border: 4px solid var(--secondary);
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    background-color: var(--text);
+}
+
+.image-callout {
+    background-color: var(--soft);
+    border-radius: 14px;
+    padding: 1.25em;
+}
+
+.image-callout.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-callout img {
+    width: 48%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
+    margin: 2em 0;
+}
+
+.gallery-grid figure {
+    margin: 0;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-grid img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.gallery-grid figcaption {
+    padding: 1em;
+    color: var(--secondary);
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-layout {
+    align-items: flex-start;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    gap: 1em;
+    background-color: var(--soft);
+    border-left: 6px solid var(--primary);
+    border-radius: 14px;
+    padding: 1.5em;
+}
+
+label {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid var(--secondary);
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    grid-column: 2;
+    width: 11em;
+    background-color: var(--accent);
+    color: var(--text);
+    border: 0;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary);
+}
+
+.contact-card {
+    background-color: var(--background);
+    border: 1px solid var(--secondary);
+    border-radius: 14px;
+    padding: 1.5em;
+}
+
+.contact-card h3 {
+    color: var(--secondary);
+    margin-top: 0;
+}
+
+.contact-card a {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+@media (max-width: 850px) {
+    .media-section,
+    .image-callout,
+    .image-callout.reverse,
+    .contact-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .image-callout img {
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 1;
     }
 }

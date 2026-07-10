@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="The Polished Society offers salon suite rentals for beauty professionals looking for independence, flexibility, and a polished workspace.">
+    <meta name="description" content="The Polished Society offers private salon suites, flexible rental options, professional amenities, and support for independent beauty professionals.">
     <meta name="keywords" content="salon suites, beauty professionals, suite rentals, hairstylist suite, lash technician, esthetician, nail technician">
     <meta name="author" content="Elishaa Logan-May">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Polished Society</title>
+    <title>The Polished Society | Luxury Salon Suite Rentals</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,16 +19,13 @@
                 <p>Private salon suites for beauty professionals ready to grow.</p>
             </div>
         </header>
-
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="suites.html">Suites &amp; Amenities</a>
             <a href="gallery.html">Gallery</a>
-            <a href="availability.html">Availability</a>
             <a href="contact.html">Contact Us</a>
         </nav>
-
         <main>
             <section class="hero">
                 <div class="hero-text">
@@ -54,19 +51,10 @@
                 </p>
             </section>
 
-            <section class="stats">
-                <div>
-                    <strong>Private</strong>
-                    <span>suite experience</span>
-                </div>
-                <div>
-                    <strong>Flexible</strong>
-                    <span>rental options</span>
-                </div>
-                <div>
-                    <strong>Polished</strong>
-                    <span>client environment</span>
-                </div>
+            <section class="stats" aria-label="Business benefits">
+                <div><strong>Private</strong><span>suite experience</span></div>
+                <div><strong>Flexible</strong><span>rental options</span></div>
+                <div><strong>Polished</strong><span>client environment</span></div>
             </section>
 
             <section class="features">
@@ -74,16 +62,29 @@
                     <h3>Private Suites</h3>
                     <p>Customize your own professional space and create a client experience that reflects your brand.</p>
                 </article>
-
                 <article>
                     <h3>Business Freedom</h3>
                     <p>Set your own schedule, manage your services, and build your beauty business with confidence.</p>
                 </article>
-
                 <article>
                     <h3>Modern Amenities</h3>
                     <p>Enjoy shared waiting areas, clean common spaces, and features designed for beauty entrepreneurs.</p>
                 </article>
+            </section>
+
+            <section class="media-section">
+                <div>
+                    <p class="eyebrow">Take a quick look</p>
+                    <h2>Picture Yourself Here</h2>
+                    <p>
+                        Watch this short preview to see the type of polished, client-ready environment
+                        The Polished Society is designed to provide.
+                    </p>
+                </div>
+                <video controls poster="salon-tour-poster.jpg" aria-label="Salon suite tour preview">
+                    <source src="salon-suite-tour.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
             </section>
 
             <section class="preview">
@@ -92,28 +93,31 @@
                     Compare possible suite options before contacting us to request availability
                     or schedule a private tour.
                 </p>
-
                 <table>
-                    <tr>
-                        <th>Suite Type</th>
-                        <th>Best For</th>
-                        <th>Status</th>
-                    </tr>
-                    <tr>
-                        <td>Standard Suite</td>
-                        <td>Hair, lashes, or makeup</td>
-                        <td>Coming Soon</td>
-                    </tr>
-                    <tr>
-                        <td>Deluxe Suite</td>
-                        <td>Esthetics or nail services</td>
-                        <td>Coming Soon</td>
-                    </tr>
-                    <tr>
-                        <td>Premium Suite</td>
-                        <td>Multi-service beauty professionals</td>
-                        <td>Coming Soon</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Suite Type</th>
+                            <th>Best For</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard Suite</td>
+                            <td>Hair, lashes, or makeup</td>
+                            <td>Coming Soon</td>
+                        </tr>
+                        <tr>
+                            <td>Deluxe Suite</td>
+                            <td>Esthetics or nail services</td>
+                            <td>Coming Soon</td>
+                        </tr>
+                        <tr>
+                            <td>Premium Suite</td>
+                            <td>Multi-service beauty professionals</td>
+                            <td>Coming Soon</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 
@@ -123,14 +127,22 @@
                 <a class="button" href="contact.html">Request Availability</a>
             </section>
         </main>
-
         <footer>
             <p>&copy; 2026 The Polished Society | All Rights Reserved</p>
-            <p>Contact: info@thepolishedsociety.com | (480) 555-2026</p>
             <p>
-                Instagram: @thepolishedsociety |
-                Facebook: The Polished Society |
-                TikTok: @thepolishedsociety
+                Contact:
+                <a href="mailto:info@thepolishedsociety.com">info@thepolishedsociety.com</a>
+                | (480) 555-2026
+            </p>
+            <p>
+                Follow us:
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> |
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> |
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+            </p>
+            <p>
+                Beauty professionals can review licensing information through the
+                <a href="https://bcb.az.gov/" target="_blank" rel="noopener">Arizona Barbering &amp; Cosmetology Board</a>.
             </p>
         </footer>
     </div>
